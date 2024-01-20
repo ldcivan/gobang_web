@@ -531,14 +531,6 @@
               }
             }
           }
-          for (let row = 0; row < rows; row++) {
-            for (let col = 0; col < cols - 4; col++) {
-              const window = board[row].slice(col, col + 5);
-              if (isWinningWindow(window)) {
-                return true;
-              }
-            }
-          }
         
           // 检查垂直方向
           for (let col = 0; col < cols; col++) {
